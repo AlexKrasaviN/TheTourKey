@@ -15,13 +15,16 @@ const header = document.querySelector(".header")
 
 const burgerIcon = document.querySelector(".header__burger");
 const navigation = document.querySelector(".header__nav");
+const body = document.querySelector("body");
     burgerIcon.onclick = function () {
         navigation.classList.add("header__nav_active");
+        body.classList.add("lock")
     };
 
 const closeIcon = document.querySelector(".header__nav-close");
     closeIcon.onclick = function () {
         navigation.classList.remove("header__nav_active");
+        body.classList.remove("lock")
     };
 
 // burger script end

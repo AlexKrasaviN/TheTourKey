@@ -116,6 +116,9 @@ p{
     position: relative;
 }
 @media screen and (max-width: 940px) {
+    .lock{
+        overflow: hidden;
+    }
     .nav__list{
         display: flex;
         flex-direction: column;
@@ -127,10 +130,10 @@ p{
     .nav__link{
         font-size: 34px;
         line-height: 60px;
+        font-weight: 500;
     }
     .nav__link:hover, .nav__link:active{
-        color: white;
-        font-style: italic;
+        color: blueviolet;
     }
     .header__burger{
         display: block;
@@ -141,11 +144,17 @@ p{
         height: 100%;
         top: 0;
         left: 0;
+        overflow: auto;
         background-color: black;
         z-index: 10;
         padding: 80px 80px 80px 70px;
-        transform: translateX(-100%);
+        transform: translateX(-120%);
         transition: 0.5s all;
+    }
+    @media screen and (max-width: 290px) {
+        .header__nav{
+            padding: 80px 80px 80px 30px;
+        }
     }
     .header__nav_active{
         transform: translateX(0);
@@ -198,7 +207,7 @@ p{
     background-position: fixed;
     background-size: cover;
     margin-bottom: 50px;
-    padding-top: 24vh;
+    padding-top: 23vh;
 }
 @media screen and (max-width: 576px){
     .section-main{
@@ -356,7 +365,13 @@ p{
         height: 200px;
     }
 }
-@media screen and (max-width: 662px) {
+@media screen and (max-width: 581px) {
+    .places__item-front{
+        width: 300px;
+        height: 200px;
+    }
+}
+@media screen and (max-width: 320px) {
     .places__item-front{
         width: 260px;
         height: 180px;
@@ -383,7 +398,13 @@ p{
         height: 200px;
     }
 }
-@media screen and (max-width: 662px) {
+@media screen and (max-width: 581px) {
+    .places__item-back{
+        width: 300px;
+        height: 200px;
+    }
+}
+@media screen and (max-width: 320px) {
     .places__item-back{
         width: 260px;
         height: 180px;
@@ -415,7 +436,13 @@ p{
         height: 200px;
     }
 }
-@media screen and (max-width: 662px) {
+@media screen and (max-width: 581px) {
+    .places__item-img{
+        width: 300px;
+        height: 200px;
+    }
+}
+@media screen and (max-width: 320px) {
     .places__item-img{
         width: 260px;
         height: 180px;
@@ -455,14 +482,14 @@ p{
         font-size: 14px;
     }
 }
-@media screen and (max-width: 662px) {
+@media screen and (max-width: 581px) {
     .places__item-back__desc{
-        font-size: 12px;
+        font-size: 14px;
     }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
     .places__item-back__desc{
-        font-size: 11px;
+        font-size: 12px;
     }
 }
 .places__item-back__link{
