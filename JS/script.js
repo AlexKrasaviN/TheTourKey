@@ -29,7 +29,7 @@ const closeIcon = document.querySelector(".header__nav-close");
 
 // burger script end
 
-// buttons sctipt start
+// Text buttons sctipt start
 
 let reviewsButtonOn = document.querySelectorAll(".section-reviews__button-on");
 let textHidden = document.querySelectorAll(".reviews__text-hidden");
@@ -54,4 +54,25 @@ let textHidden = document.querySelectorAll(".reviews__text-hidden");
         };   
     };
 
-// buttons script end
+// Text buttons script end
+
+// Form script start
+
+const contactButton = document.querySelector('.section-contacts__btn');
+const userName = document.querySelector('.contact__user-name');
+const userEmail =  document.querySelector('.contact__user-email');
+const userReview =  document.querySelector('.contact__user-review');
+
+const userData = {
+    userName: userName.value,
+    userEmail: userEmail.value,
+    userReview: userReview.value
+};
+
+contactButton.addEventListener('click', () => {
+    if (userName !== '' && userEmail !== '' && userReview !== '') {
+        console.log(userData)
+    }
+})
+
+// Form script end
