@@ -63,16 +63,4 @@ const userName = document.querySelector('.contact__user-name');
 const userEmail =  document.querySelector('.contact__user-email');
 const userReview =  document.querySelector('.contact__user-review');
 
-const userData = {
-    userName: userName.value,
-    userEmail: userEmail.value,
-    userReview: userReview.value
-};
-
-contactButton.addEventListener('click', () => {
-    if (userName !== '' && userEmail !== '' && userReview !== '') {
-        console.log(userData)
-    }
-})
-
 // Form script end
