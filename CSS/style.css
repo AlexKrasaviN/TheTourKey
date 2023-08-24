@@ -202,7 +202,7 @@ p{
 
 .section-main{
     height: 100vh;
-    background: url(../assets/images/site-bg-2.jpg) no-repeat;
+    background: url(../assets/images/site-bg-2-min.jpg) no-repeat;
     background-attachment: fixed;
     background-position: fixed;
     background-size: cover;
@@ -257,7 +257,7 @@ p{
     flex-wrap: wrap;
 }
 .section-main__field{
-    background: url(../assets/images/icons/icon-circle.svg) no-repeat left 8px;
+    background: url(../assets/icons/icon-circle.svg) no-repeat left 8px;
     outline: none;
     font-size: 18px;
     color: white;
@@ -329,7 +329,7 @@ p{
 .section-places__link{
     text-decoration: none;
     padding-right: 50px;
-    background: url(../assets/images/icons/icon-arrow-blue.svg) no-repeat right center;
+    background: url(../assets/icons/icon-arrow-blue.svg) no-repeat right center;
     transition: 0.4s all;
 }
 .places__items-wrapper{
@@ -566,7 +566,7 @@ p{
     padding-top: 7px;
     width: 40%;
     height: 50px;
-    background: url(../assets/images/icons/icon-arrow.png) no-repeat 85% top;
+    background: url(../assets/icons/icon-arrow.png) no-repeat 85% top;
     background-size: 56px 56px;
     filter: brightness(0) invert(1);
     text-align: left;
@@ -588,7 +588,7 @@ p{
 }
 .about-wrapper__item__title:hover{
     cursor: pointer;
-    background: url(../assets/images/icons/icon-arrow.png) no-repeat right top;
+    background: url(../assets/icons/icon-arrow.png) no-repeat right top;
     background-size: 56px 56px;
 }
 @media screen and (max-width: 992px) {
@@ -599,7 +599,7 @@ p{
 .about-wrapper__item__title-reverse{
     padding-top: 7px;
     width: 40%;
-    background: url(../assets/images/icons/icon-arrow-reverse.png) no-repeat 15% top;
+    background: url(../assets/icons/icon-arrow-reverse.png) no-repeat 15% top;
     filter: brightness(0) invert(1);
     background-size: 56px 56px;
     text-align: right;
@@ -619,7 +619,7 @@ p{
 }
 .about-wrapper__item__title-reverse:hover{
     cursor: pointer;
-    background: url(../assets/images/icons/icon-arrow-reverse.png) no-repeat left top;
+    background: url(../assets/icons/icon-arrow-reverse.png) no-repeat left top;
     background-size: 56px 56px;
 }
 @media screen and (max-width: 992px) {
