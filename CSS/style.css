@@ -465,6 +465,21 @@ p{
     top: 3px;
     left: 7px;
 }
+.places__icon-click{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.places__icon-cursor{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+@media screen and (max-width: 768px) {
+    .places__icon-cursor{
+        display: none;
+    }
+}
 .places__item-back-wrapper{
     display: flex;
     flex-direction: column;
