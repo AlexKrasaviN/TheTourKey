@@ -471,7 +471,7 @@ p{
     right: 5px;
 }
 @media screen and (min-width: 769px) {
-    .places__icon-cursor{
+    .places__icon-click{
         display: none;
     }    
 }
