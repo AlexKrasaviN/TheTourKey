@@ -470,6 +470,11 @@ p{
     top: 5px;
     right: 5px;
 }
+@media screen and (min-width: 769px) {
+    .places__icon-cursor{
+        display: none;
+    }    
+}
 .places__icon-cursor{
     position: absolute;
     top: 5px;
