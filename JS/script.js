@@ -2,7 +2,7 @@
 
 const header = document.querySelector(".header")
     window.onscroll = function () {
-        if (window.pageYOffset > 40) {
+        if (window.scrollY > 40) {
             header.classList.add("header_active");
         } else {
             header.classList.remove("header_active");
@@ -28,6 +28,14 @@ const closeIcon = document.querySelector(".header__nav-close");
     };
 
 // burger script end
+
+// scroll buttons script start
+
+const placeButton = document.querySelector('.places__item-back__link');
+const placeBlock = document.querySelector('.section-tours__place-image-wrapper');
+const headerHeight = header.clientHeight;
+
+// scroll buttons script end
 
 // Text buttons sctipt start
 
