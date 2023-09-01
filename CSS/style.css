@@ -64,6 +64,10 @@ p{
 .header_active{
     background-color: #E30A17;
 }
+.header_hidden{
+    transform: translateY(-100%);
+    transition: 0.1s linear;
+}
 .header-wrapper{
     margin: 20px 0;
     display: flex;

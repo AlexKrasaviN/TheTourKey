@@ -11,6 +11,23 @@ const header = document.querySelector(".header")
 
 // header script end
 
+// hidden header script start
+
+let previousScroll = 0;
+
+window.addEventListener('scroll', () => {
+    let currentScroll = window.scrollY;
+
+    if (currentScroll > previousScroll) {
+        header.classList.add('header_hidden')
+    } else {
+        header.classList.remove('header_hidden')
+    }
+    previousScroll = currentScroll;
+});
+
+// hidden header script end
+
 // burger script start
 
 const burgerIcon = document.querySelector(".header__burger");
