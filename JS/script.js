@@ -1,13 +1,13 @@
 // header script start
 
 const header = document.querySelector(".header")
-    window.onscroll = function () {
-        if (window.scrollY > 40) {
-            header.classList.add("header_active");
-        } else {
-            header.classList.remove("header_active");
-        }
-    };
+  window.onscroll = function () {
+    if (window.scrollY > 40) {
+      header.classList.add("header_active");
+    } else {
+      header.classList.remove("header_active");
+    }
+  };
 
 // header script end
 
@@ -16,14 +16,14 @@ const header = document.querySelector(".header")
 let previousScroll = 0;
 
 window.addEventListener('scroll', () => {
-    let currentScroll = window.scrollY;
+  let currentScroll = window.scrollY;
 
-    if (currentScroll > previousScroll) {
-        header.classList.add('header_hidden')
-    } else {
-        header.classList.remove('header_hidden')
-    }
-    previousScroll = currentScroll;
+  if (currentScroll > previousScroll) {
+    header.classList.add('header_hidden')
+  } else {
+    header.classList.remove('header_hidden')
+  }
+  previousScroll = currentScroll;
 });
 
 // hidden header script end
@@ -33,16 +33,16 @@ window.addEventListener('scroll', () => {
 const burgerIcon = document.querySelector(".header__burger");
 const navigation = document.querySelector(".header__nav");
 const body = document.querySelector("body");
-    burgerIcon.onclick = function () {
-        navigation.classList.add("header__nav_active");
-        body.classList.add("lock")
-    };
+  burgerIcon.onclick = function () {
+    navigation.classList.add("header__nav_active");
+    body.classList.add("lock")
+  };
 
 const closeIcon = document.querySelector(".header__nav-close");
-    closeIcon.onclick = function () {
-        navigation.classList.remove("header__nav_active");
-        body.classList.remove("lock")
-    };
+  closeIcon.onclick = function () {
+    navigation.classList.remove("header__nav_active");
+    body.classList.remove("lock")
+  };
 
 // burger script end
 
@@ -58,26 +58,26 @@ const headerHeight = header.clientHeight;
 
 let reviewsButtonOn = document.querySelectorAll(".section-reviews__button-on");
 let textHidden = document.querySelectorAll(".reviews__text-hidden");
-    function showText1 () {
-        for(let i = 0; i <  reviewsButtonOn.length; i++) {
-            reviewsButtonOn[0].classList.toggle("section-reviews__button-on_active");
-            textHidden[0].classList.toggle("reviews__text-hidden_active");
-        };   
-    };
+  function showText1 () {
+    for(let i = 0; i <  reviewsButtonOn.length; i++) {
+      reviewsButtonOn[0].classList.toggle("section-reviews__button-on_active");
+      textHidden[0].classList.toggle("reviews__text-hidden_active");
+    };   
+  };
 
-    function showText2 () {
-        for(let i = 0; i <  reviewsButtonOn.length; i++) {
-            reviewsButtonOn[1].classList.toggle("section-reviews__button-on_active");
-            textHidden[1].classList.toggle("reviews__text-hidden_active");
-        };   
-    };
+  function showText2 () {
+    for(let i = 0; i <  reviewsButtonOn.length; i++) {
+      reviewsButtonOn[1].classList.toggle("section-reviews__button-on_active");
+      textHidden[1].classList.toggle("reviews__text-hidden_active");
+    };   
+  };
 
-    function showText3 () {
-        for(let i = 0; i <  reviewsButtonOn.length; i++) {
-            reviewsButtonOn[2].classList.toggle("section-reviews__button-on_active");
-            textHidden[2].classList.toggle("reviews__text-hidden_active");
-        };   
-    };
+  function showText3 () {
+    for(let i = 0; i <  reviewsButtonOn.length; i++) {
+      reviewsButtonOn[2].classList.toggle("section-reviews__button-on_active");
+      textHidden[2].classList.toggle("reviews__text-hidden_active");
+    };   
+  };
 
 // Text buttons script end
 
