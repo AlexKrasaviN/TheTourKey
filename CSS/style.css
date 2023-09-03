@@ -210,7 +210,6 @@ p{
   background-attachment: fixed;
   background-position: fixed;
   background-size: cover;
-  margin-bottom: 50px;
   padding-top: 23vh;
 }
 @media screen and (max-width: 576px){
@@ -247,7 +246,7 @@ p{
 .section-main__subtitle{
   color: white;
   font-size: 22px;
-  margin-bottom: 50px;
+  margin-bottom: 5%;
   width: 250px;
   font-family: 'Gotham';
 }
@@ -256,56 +255,23 @@ p{
     font-size: 20px;
   }
 }
-.main__info-wrapper{
+.icon-scroll__wrapper{
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
 }
-.section-main__field{
-  background: url(../assets/icons/icon-circle.svg) no-repeat left 8px;
-  outline: none;
-  font-size: 18px;
-  color: white;
-  min-width: 300px;
-  height: 40px;
-  border: 0;
-  border-bottom: 2px solid white;
-  margin-right: 10px;
-  padding: 0 5px 0 30px;
-  margin-bottom: 20px;
-}
-@media screen and (max-width: 335px) {
-  .section-main__field{
-    min-width: 270px;
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 305px) {
-  .section-main__field{
-    min-width: 250px;
-  }
-}
-.section-main__field::placeholder{
-  color: white;
-}
-@media screen and (max-width: 335px) {
-  .section-main__field::placeholder{
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 305px) {
-  .section-main__field::placeholder{
-    font-size: 14px;
-  }
-}
-.section-main__btn{
-  color: white;
-  height: 40px;
+.main__icon-scroll{
   width: 100px;
-  border: 0;
-  background-color: #E30A17;
+  border: 2px solid white;
+  padding: 20px;
+  border-radius: 50%;
 }
-.section-main__btn:hover{   
-  background-color: #bb0915;
+.main__icon-scroll:hover{
+  cursor: pointer;
+}
+@media screen and (max-width: 574px) {
+  .main__icon-scroll{
+    display: none;
+  }
 }
 
 /* main styles end */
@@ -313,6 +279,7 @@ p{
 /* places styles start */
 
 .section-places{
+  padding-top: 50px;
   margin-bottom: 70px;
 }
 @media screen and (max-width: 768px) {

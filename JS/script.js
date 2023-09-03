@@ -46,13 +46,26 @@ const closeIcon = document.querySelector(".header__nav-close");
 
 // burger script end
 
-// scroll buttons script start
+// scroll main button script start
+
+const scrollArrow = document.querySelector('.main__icon-scroll');
+const sectionPlaces = document.querySelector('.section-places');
+
+scrollArrow.addEventListener('click', () => {
+  sectionPlaces.scrollIntoView({
+    behavior: "smooth",
+  })
+})
+
+// scroll main button script end
+
+// scroll place buttons script start
 
 const placeButton = document.querySelector('.places__item-back__link');
 const placeBlock = document.querySelector('.section-tours__place-image-wrapper');
 const headerHeight = header.clientHeight;
 
-// scroll buttons script end
+// scroll place buttons script end
 
 // Text buttons sctipt start
 
