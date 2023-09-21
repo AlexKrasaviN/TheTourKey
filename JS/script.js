@@ -34,19 +34,23 @@ window.addEventListener('scroll', () => {
 
 const burgerIcon = document.querySelector(".header__burger");
 const navigation = document.querySelector(".header__nav");
+const burderFirstLine = document.querySelector('.burger__line_first');
+const burderSecondLine = document.querySelector('.burger__line_second');
 const body = document.querySelector("body");
 
 burgerIcon.onclick = function () {
-  navigation.classList.add("header__nav_active");
-  body.classList.add("lock");
+  navigation.classList.toggle("header__nav_active");
+  body.classList.toggle("lock");
+  burderFirstLine.classList.toggle('active');
+  burderSecondLine.classList.toggle('active');
 };
 
-const closeIcon = document.querySelector(".header__nav-close");
+// const closeIcon = document.querySelector(".header__nav-close");
 
-closeIcon.onclick = function () {
-  navigation.classList.remove("header__nav_active");
-  body.classList.remove("lock");
-};
+// closeIcon.onclick = function () {
+//   navigation.classList.remove("header__nav_active");
+//   body.classList.remove("lock");
+// };
 
 // burger script end
 
