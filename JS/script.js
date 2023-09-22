@@ -45,13 +45,6 @@ burgerIcon.onclick = function () {
   burderSecondLine.classList.toggle('active');
 };
 
-// const closeIcon = document.querySelector(".header__nav-close");
-
-// closeIcon.onclick = function () {
-//   navigation.classList.remove("header__nav_active");
-//   body.classList.remove("lock");
-// };
-
 // burger script end
 
 // scroll main button script start
@@ -66,14 +59,6 @@ scrollArrow.addEventListener('click', () => {
 });
 
 // scroll main button script end
-
-// scroll place buttons script start
-
-const placeButton = document.querySelector('.places__item-back__link');
-const placeBlock = document.querySelector('.section-tours__place-image-wrapper');
-const headerHeight = header.clientHeight;
-
-// scroll place buttons script end
 
 // Text buttons sctipt start
 
@@ -103,12 +88,3 @@ function showText3 () {
 };
 
 // Text buttons script end
-
-// Form script start
-
-const contactButton = document.querySelector('.section-contacts__btn');
-const userName = document.querySelector('.contact__user-name');
-const userEmail =  document.querySelector('.contact__user-email');
-const userReview =  document.querySelector('.contact__user-review');
-
-// Form script end
