@@ -59,9 +59,7 @@ p{
   top: 0;
   left: 0;
   z-index: 100;
-  transition: 0.5s all;   
-}
-.header_active{
+  transition: 0.5s all;
   background-color: #E30A17;
 }
 .header_hidden{
@@ -135,9 +133,10 @@ p{
     font-size: 34px;
     line-height: 60px;
     font-weight: 500;
+    color: black;
   }
   .nav__link:hover, .nav__link:active{
-    color: blueviolet;
+    color: #E30A17;
   }
   .header__burger{
     display: block;
@@ -149,7 +148,7 @@ p{
     top: 0;
     left: 0;
     overflow: auto;
-    background-color: black;
+    background-color: white;
     z-index: 10;
     padding: 80px 80px 80px 70px;
     transform: translateX(-110%);
@@ -446,8 +445,8 @@ p{
 }
 .places__icon-click{
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 10px;
+  right: 10px;
 }
 @media screen and (min-width: 769px) {
   .places__icon-click{
@@ -456,8 +455,9 @@ p{
 }
 .places__icon-cursor{
   position: absolute;
-  top: 5px;
-  right: 5px;
+  bottom: 10px;
+  right: 10px;
+  filter: invert(1);
 }
 @media screen and (max-width: 768px) {
   .places__icon-cursor{
@@ -509,7 +509,6 @@ p{
 
 .section-about{
   padding-top: 130px;
-  background-color: black;
 }
 .section-about__title{
   display: none;
@@ -526,12 +525,11 @@ p{
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  color: white;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 992px) {
   .about-wrapper__item{
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid black;
   }
 }
 @media screen and (max-width: 615px) {
@@ -547,13 +545,11 @@ p{
   flex-wrap: wrap;
   flex-direction: row-reverse;
   justify-content: space-between;
-  background-color: black;
-  color: white;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 992px) {
   .about-wrapper__item-reverse{
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid black;
   }
 }
 @media screen and (max-width: 615px) {
@@ -567,7 +563,6 @@ p{
   height: 50px;
   background: url(../assets/icons/icon-arrow.png) no-repeat 85% top;
   background-size: 56px 56px;
-  filter: brightness(0) invert(1);
   text-align: left;
   transition: 0.5s all;
   margin: 0;
@@ -599,7 +594,6 @@ p{
   padding-top: 7px;
   width: 40%;
   background: url(../assets/icons/icon-arrow-reverse.png) no-repeat 15% top;
-  filter: brightness(0) invert(1);
   background-size: 56px 56px;
   text-align: right;
   transition: 0.5s all;
@@ -649,7 +643,7 @@ p{
   content: '';
   width: 0;
   height: 2px;
-  background: white;
+  background: black;
   transition: 1.1s all;
   margin-bottom: 5px;
 }
@@ -662,7 +656,7 @@ p{
   content: '';
   width: 0;
   height: 2px;
-  background: white;
+  background: black;
   transition: 0.5s all;
   margin-top: 5px;
 }
@@ -785,8 +779,6 @@ p{
   z-index: 5;
   padding: 15px 0 25px 0;
   margin: 0;
-  color: white;
-  background-color: black;
 }
 @media screen and (max-width: 296px) {
   .footer{
@@ -802,7 +794,6 @@ p{
 .footer__copyright-image{
   width: 15px;
   height: 15px;
-  filter: brightness(0) invert(1);
 }
 @media screen and (max-width: 378px) {
   .footer__copyright{
@@ -843,13 +834,10 @@ p{
 .footer__list-icon{
   width: 32px;
   height: 32px;
-  filter: brightness(0) invert(1);
-  transition: 0.17s all;
+  transition: 0.2s all;
 }
 .footer__list-icon:hover{
-  width: 32px;
-  height: 32px;
-  filter: brightness(0) invert(1) opacity(50%);
+  filter: brightness(0) invert(0) opacity(60%);
 }
 
 /* footer styles end */
@@ -858,11 +846,6 @@ p{
 
 .section-tours{
   padding-top: 120px;
-  color: white;
-  background-color: black;
-}
-.section-tours__title{
-  color: white;
 }
 .section-tours__places{
   display: flex;
@@ -920,12 +903,13 @@ p{
   bottom: 0;
   background-color: rgb(43, 43, 255);
   color: white;
-  transition: 0.4s all;
+  transition: 0.3s all;
 }
 .section-tours__place-link:hover, .section-tours__place-link:active{
   padding: 5px;
   background-color: transparent;
-  border: 2px solid white;
+  color: black;
+  border: 2px solid black;
 }
 
 /* tours styles end */
@@ -942,7 +926,6 @@ p{
 }
 .section-map{
   width: 100%;
-  background: #000;
 }
 .section-map__desc-wrapper{
   margin-left: 12px;
@@ -977,7 +960,7 @@ p{
 .section-map__desc{
   padding: 3px;
   margin: 0;
-  color: white;
+  color: black;
 }
 @media screen and (max-width: 378px) {
   .section-map__desc{
@@ -994,12 +977,11 @@ p{
 
 .section-testimonials{
   padding-top: 120px;
-  background-color: black;
+  background-color: white;
   height: 100%;
-  color: white;
+  color: black;
 }
 .section-testimonials__title{
-  color: white;
   margin-bottom: 45px;
 }
 .section-testimonials__items{
@@ -1036,7 +1018,7 @@ p{
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  border-right: 2px solid white;
+  border-right: 2px solid black;
   margin-bottom: 10px;
 }
 @media screen and (max-width: 435px) {
@@ -1049,7 +1031,7 @@ p{
   flex-wrap: wrap;
   justify-content: flex-end;
   width: 100%;
-  border-left: 2px solid white;
+  border-left: 2px solid black;
   margin-bottom: 10px;
 }
 @media screen and (max-width: 435px) {
@@ -1079,21 +1061,20 @@ p{
   text-align: justify;
   margin: 0;
   padding: 7px 0;
-  border-bottom: 2px dotted rgba(255, 255, 255, 0.6);
+  border-bottom: 2px dotted rgba(0, 0, 0, 0.6);
 }
 .section-testimonials__text::before{
   position: absolute;
   display: block;
   top: 0;
   content: '';
-  border-top: 2px dotted rgba(255, 255, 255, 0.6);
+  border-top: 2px dotted rgba(0, 0, 0, 0.6);
   width: 0;
   transition: 0.7s all;
 }
 @media screen and (max-width: 576px) {
   .section-testimonials__text{
     padding-bottom: 10px;
-    border-bottom: 2px dotted rgba(255, 255, 255, 0.4);
   }
 }
 
@@ -1102,9 +1083,9 @@ p{
 /* contacts styles start */
 
 .section-contacts{
-  color: white;
+  color: black;
   padding-top: 120px;
-  background-color: black;
+  background-color: white;
 }
 @media screen and (max-width: 910px) {
   .section-contacts{
@@ -1152,7 +1133,7 @@ p{
   width: 60%;
   height: 50px;
   background-color: transparent;
-  color: white;
+  color: black;
   font-size: 20px;
   margin-bottom: 30px;
   border: 1px solid gold;
@@ -1178,7 +1159,7 @@ p{
   outline: none;
   resize: none;
   background-color: transparent;
-  color: white;
+  color: black;
   font-size: 20px;
   border: 1px solid gold;
   padding: 3px 10px 3px 10px;    
@@ -1212,7 +1193,6 @@ p{
   }
 }
 .section-contacts__btn:hover{
-  color: white;
   background-color: transparent;
 }
 

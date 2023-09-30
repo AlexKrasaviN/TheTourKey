@@ -2,13 +2,13 @@
 
 const header = document.querySelector(".header");
 
-window.onscroll = function () {
-  if (window.scrollY > 40) {
-    header.classList.add("header_active");
-  } else {
-    header.classList.remove("header_active");
-  }
-};
+// window.onscroll = function () {
+//   if (window.scrollY > 40) {
+//     header.classList.add("header_active");
+//   } else {
+//     header.classList.remove("header_active");
+//   }
+// };
 
 // header script end
 
@@ -52,15 +52,17 @@ burgerIcon.onclick = function () {
 const scrollArrow = document.querySelector('.main__icon-scroll');
 const sectionPlaces = document.querySelector('.section-places');
 
-scrollArrow.addEventListener('click', () => {
-  sectionPlaces.scrollIntoView({
-    behavior: "smooth",
-  })
-});
+if (scrollArrow) {
+  scrollArrow.addEventListener('click', () => {
+    sectionPlaces.scrollIntoView({
+      behavior: "smooth"
+    })
+  });
+}
 
 // scroll main button script end
 
-// Text buttons sctipt start
+// text buttons sctipt start
 
 const reviewsButtonOn = document.querySelectorAll(".section-reviews__button-on");
 const textHidden = document.querySelectorAll(".reviews__text-hidden");
@@ -87,4 +89,4 @@ function showText3 () {
   };
 };
 
-// Text buttons script end
+// text buttons script end
