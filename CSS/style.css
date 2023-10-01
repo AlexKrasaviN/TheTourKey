@@ -66,6 +66,9 @@ p{
   transform: translateY(-110%);
   transition: 0.1s linear;
 }
+/* .header_active{
+  background-color: #E30A17;
+} */
 .header-wrapper{
   margin: 20px 0;
   display: flex;

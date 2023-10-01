@@ -2,13 +2,13 @@
 
 const header = document.querySelector(".header");
 
-// window.onscroll = function () {
-//   if (window.scrollY > 40) {
-//     header.classList.add("header_active");
-//   } else {
-//     header.classList.remove("header_active");
-//   }
-// };
+window.onscroll = function () {
+  if (window.scrollY > 40) {
+    header.classList.add("header_active");
+  } else {
+    header.classList.remove("header_active");
+  }
+};
 
 // header script end
 
@@ -64,29 +64,10 @@ if (scrollArrow) {
 
 // text buttons sctipt start
 
-const reviewsButtonOn = document.querySelectorAll(".section-reviews__button-on");
+const reviewsButtonOn = new Array(document.querySelectorAll(".section-reviews__button-on"));
 const textHidden = document.querySelectorAll(".reviews__text-hidden");
 const reviewsWrappers = document.querySelectorAll('.reviews__user-wrapper');
 
-function showText1 () {
-  for (let i = 0; i <  reviewsButtonOn.length; i++) {
-    reviewsButtonOn[0].classList.toggle("section-reviews__button-on_active");
-    textHidden[0].classList.toggle("reviews__text-hidden_active");
-  };
-};
-
-function showText2 () {
-  for (let i = 0; i <  reviewsButtonOn.length; i++) {
-    reviewsButtonOn[1].classList.toggle("section-reviews__button-on_active");
-    textHidden[1].classList.toggle("reviews__text-hidden_active");
-  };
-};
-
-function showText3 () {
-  for (let i = 0; i <  reviewsButtonOn.length; i++) {
-    reviewsButtonOn[2].classList.toggle("section-reviews__button-on_active");
-    textHidden[2].classList.toggle("reviews__text-hidden_active");
-  };
-};
+console.log(reviewsButtonOn);
 
 // text buttons script end
