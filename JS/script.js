@@ -37,12 +37,14 @@ const navigation = document.querySelector(".header__nav");
 const burderFirstLine = document.querySelector('.burger__line_first');
 const burderSecondLine = document.querySelector('.burger__line_second');
 const body = document.querySelector("body");
+const shadow = document.querySelector('.shadow');
 
 burgerIcon.onclick = function () {
   navigation.classList.toggle("header__nav_active");
   body.classList.toggle("lock");
   burderFirstLine.classList.toggle('active');
   burderSecondLine.classList.toggle('active');
+  shadow.classList.toggle('active');
 };
 
 // burger script end
@@ -61,13 +63,3 @@ if (scrollArrow) {
 }
 
 // scroll main button script end
-
-// text buttons sctipt start
-
-const reviewsButtonOn = new Array(document.querySelectorAll(".section-reviews__button-on"));
-const textHidden = document.querySelectorAll(".reviews__text-hidden");
-const reviewsWrappers = document.querySelectorAll('.reviews__user-wrapper');
-
-console.log(reviewsButtonOn);
-
-// text buttons script end
