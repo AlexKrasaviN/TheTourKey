@@ -263,6 +263,8 @@ p{
     justify-content: center;
   }
   .main__icon-scroll{
+    position: absolute;
+    bottom: 5%;
     width: 70px;
     animation: icon-scroll 3s ease-in-out infinite;
   }
