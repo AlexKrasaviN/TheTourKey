@@ -73,6 +73,9 @@ p{
   .header__logo{
     filter: invert(0);
   }
+  .burger__line{
+    background-color: white;
+  }
 }
 .header-wrapper{
   margin: 20px 0;
@@ -145,6 +148,11 @@ p{
     line-height: 60px;
     font-weight: 500;
     color: black;
+  }
+  .header_active{
+    .nav__link{
+      color: black;
+    }
   }
   .nav__link:hover, .nav__link:active{
     color: #E30A17;
